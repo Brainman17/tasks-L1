@@ -1,3 +1,5 @@
+// !!! В запросе http, но при деплое такие протоколы будут блокироваться, локально все работает !!!
+
 // Возьмем сразу элементы
 const table = document.querySelector("table");
 const tableBody = table.querySelector("#table-rows");
