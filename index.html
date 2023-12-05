@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="map" class="map"></div>
+      <div id="widget" class="widget">
+        <div id="posts"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="buttons">
+        <button class="glow-on-hover prev">prev 50</button>
+        <button class="glow-on-hover next">next 50</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>phoneNumber</th>
+            <th>address</th>
+            <th>city</th>
+            <th>state</th>
+            <th>zip</th>
+          </tr>
+        </thead>
+        <tbody id="table-rows"></tbody>
+      </table>
+    </div>
+
+    <template id="myTemplate">
+      <div id="newElement"></div>
+    </template>
+    <div id="parentElement"></div>
+
+    <form id="myForm">
+      <input type="text" id="name" placeholder="Ваше имя" />
+      <input type="email" id="email" placeholder="Ваш email" />
+      <button type="submit">Отправить</button>
+    </form>
+
+    <script src="https://api-maps.yandex.ru/2.1.79/?apikey=2264705e-04cf-46bd-bf24-93bf07adac0e&lang=ru_RU"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script type="module" src="./index.js"></script>
+    <!-- <script>
+      document.write(document.write(document.write("Привет, мир!")));
+    </script> -->
+  </body>
+</html>
